@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+  </head>
+  <body>
+    <!-- Instead of using the image tag, you can use the picture tag for better semantics -->
+    <picture>
+      <source media="(max-width: 400px)" srcset="./pic1.jpg" />
+      <source media="(max-width: 600px)" srcset="./pic2.jpg" />
+      <source media="(max-width: 800px)" srcset="./pic3.jpg" />
+      <img title="first image" src="./toy.jpg" width="680px" />
+    </picture>
+  </body>
+</html>

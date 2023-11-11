@@ -8,5 +8,5 @@ let userState;
  */
 console.table([userId, userName, userEmail, userState]);
 
-console.log(typeof undefined);
-console.log(typeof null);
+console.log(`Type of undefined  - ${typeof undefined}`);
+console.log(`Types of Null - ${typeof null}`);

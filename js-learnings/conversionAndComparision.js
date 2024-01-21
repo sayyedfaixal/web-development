@@ -28,13 +28,17 @@ console.log(1 + "2" + 3);
 
 console.log("" >= "");
 console.table([
+  `undefined > undefined : ${undefined > undefined}`,
+  `undefined == undefined : ${undefined == undefined}`,
   `undefined >= undefined : ${undefined >= undefined}`,
   `undefined >= null : ${undefined >= undefined}`,
   `undefined >= 1 : ${undefined >= null}`,
   `undefined >= "" : ${undefined >= ""}`,
   `undefined >= "abc" : ${undefined >= "abc"}`,
 
+  `null == null : ${null == null}`,
   `null >= null : ${null >= null}`,
+  `null > null : ${null > null}`,
   `null >= undefined : ${null >= undefined}`,
   `null >= 1 : ${null >= 1}`,
   `null >= "" : ${null >= ""}`,
@@ -44,4 +48,11 @@ console.table([
   ` "" >= undefined : ${"" >= undefined}`,
   ` "" >= 1 : ${"" >= 1}`,
   ` >= "abc" : ${"" >= "abc"}`,
+]);
+
+console.log([
+  `true : ${true}`,
+  `+true : ${+true}`,
+  `false: ${false}`,
+  `+false: ${+false}`,
 ]);

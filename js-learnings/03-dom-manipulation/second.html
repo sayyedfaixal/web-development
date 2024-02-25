@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing with DON</title>
+    <style>
+      li {
+        margin-top: 10px;
+        padding: 10px;
+        color: #d0f0c0;
+        background-color: #4f7942;
+        font-size: 20px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="languages"></ul>
+  </body>
+  <script>
+    // This is not an optimal approach to append the element into the DOM
+    function addLanguages(langName) {
+      const li = document.createElement("li");
+      li.innerText = `${langName}`;
+      document.querySelector(".languages").appendChild(li);
+    }
+    addLanguages("Python");
+
+    //Optimal Approach
+    function addLanguagesOptimised(langName) {
+      const li = document.createElement("li");
+      //-----------------------------------------------
+      li.appendChild(document.createTextNode(langName));
+      //-----------------------------------------------
+      document.querySelector(".languages").appendChild(li);
+    }
+    addLanguagesOptimised("Golang");
+    addLanguagesOptimised("Typescript");
+    addLanguagesOptimised("C");
+    addLanguagesOptimised("C++");
+    addLanguagesOptimised("Java");
+
+    // Edit with innerHTML
+    const fourthElement = document.querySelector("li:nth-child(4)");
+    fourthElement.innerHTML = "C#";
+
+    // Edit with TextContent
+    const firstLiChild = document.querySelector("li:first-child");
+    firstLiChild.textContent = "python";
+
+    // Edit with Replace with
+    const secondLiChild = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement("li");
+    newLi.textContent = "ts";
+    secondLiChild.replaceWith(newLi);
+
+    // Edit with OuterHTML
+    const thirdLiElement = document.querySelector("li:nth-child(3)");
+    thirdLiElement.outerHTML = "<li>Mast</li>";
+    // Removing Element
+
+    const lastElemnt = document.querySelector("li:last-child");
+    lastElemnt.remove();
+  </script>
+</html>

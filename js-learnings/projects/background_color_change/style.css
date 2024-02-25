@@ -1,0 +1,17 @@
+body{
+    background-color: #414141;
+}
+.canvas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+span{
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px solid red;
+}

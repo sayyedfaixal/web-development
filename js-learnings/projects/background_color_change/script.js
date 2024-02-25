@@ -149,12 +149,15 @@ const colors = [
   "yellowgreen",
 ];
 
+// Function to make the Span element
 function makeSpan(color) {
   const span = document.createElement("span");
   span.setAttribute("class", "button");
   span.setAttribute("id", `${color}`);
   const colorName = document.createTextNode(`${color}`);
   span.appendChild(colorName);
+
+  //   Giving appriporiate css style
   span.style.width = "200px";
   span.style.textAlign = "center";
   span.style.margin = "10px";
@@ -166,19 +169,26 @@ function makeSpan(color) {
   span.style.fontSize = "25px";
   span.style.boxShadow = "5px 3px 10px";
   span.style.cursor = "pointer";
+
+  //   For black colored box the text wont be visible, to make the text visible we change it's color
   if (color === "black") {
     span.style.color = "white";
   }
+
+  //   Appending the element into the DOM via div having class `canvas`
   document.querySelector(".canvas").appendChild(span);
 }
 
+// Function to iterate over each color in the array
 colors.forEach(function (color) {
   makeSpan(color);
 });
 
+// Targeting the DOM elements
 const buttons = document.querySelectorAll(".button");
 const body = document.querySelector("body");
 
+// Adding Event listener to each of the span having class `button`
 buttons.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     body.style.backgroundColor = `${e.target.id}`;

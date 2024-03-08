@@ -1,0 +1,61 @@
+body{
+    background-color: #212121;
+    color: #1B4242;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    background-color: #7adab8;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+}
+.main-content{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    border: 2px dashed rgb(72, 211, 114, 0.5);
+}
+.item{
+    background-color: dodgerblue;
+    padding: 10px;
+}
+.text-input-field, .submit-btn{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.submit-btn{
+    background-color:chartreuse;
+}
+.lower-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+    gap: 2rem;
+}
+.previous-guess{
+    background-color: yellowgreen;
+    margin-top: 100px;
+    padding: 10px;
+}
+.prompts{
+    background-color: salmon;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.hidden{
+    background-color:salmon;
+}

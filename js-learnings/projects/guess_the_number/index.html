@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">GUESS THE NUMBER</h1>
+    </div>
+    <div class="main-content">
+      <h2 class="item">
+        Number is Hidden <span class="hidden">here</span> you have 10 Attempts
+        left
+      </h2>
+      <form action="">
+        <input
+          id="input-field"
+          class="text-input-field"
+          type="text"
+          name="text-input"
+          placeholder="Enter a Number - Eg: 4"
+        />
+        <!-- Instead of buttons we can have the input type = submit as well -->
+        <button class="submit-btn">Make a Guest</button>
+        <!-- <button type="button" value="Make a Guess" /> -->
+      </form>
+    </div>
+    <div class="lower-content">
+      <h4 class="previous-guess">Your Previous Guesses</h4>
+      <h3 class="prompts">Check kro</h3>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

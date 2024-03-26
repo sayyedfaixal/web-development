@@ -36,11 +36,6 @@ body{
 }
 .submit-btn{
     background-color:chartreuse;
-    border: 0;
-    border-radius: 10px;
-    color: black;
-    font-size: medium;
-    font-weight: 600;
 }
 .lower-content{
     display: flex;
@@ -52,6 +47,7 @@ body{
 }
 .previous-guess{
     background-color: yellowgreen;
+    margin-top: 100px;
     padding: 10px;
 }
 .prompts{
@@ -62,14 +58,4 @@ body{
 }
 .hidden{
     background-color:salmon;
-}
-.play-again{
-    padding: 10px;
-    cursor: pointer;
-    background-color:crimson;
-    border: 0;
-    border-radius: 10px;
-    color: black;
-    font-size: medium;
-    font-weight: 600;
 }
